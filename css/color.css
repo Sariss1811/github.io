@@ -1,0 +1,181 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Page Styling */
+body {
+  background-color: #F0E0D3;
+  font-family: 'Quincy CF', Courier, monospace; /* Retro font */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #B5685B;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #B5685B;
+  border-radius: 5px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #B5685B;
+  color: white;
+  padding: 30px 20px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Banner Section */
+#banner {
+  width: 90%;
+  height: 300px;
+  background-image: url("images/banner3.jpg"); /* Relative path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Three-box layout for main sections */
+.three-box-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 5%;
+}
+
+.three-box-layout section {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.three-box-layout h2 {
+  margin-top: 0;
+  text-align: center; /* Center the headings */
+}
+
+.three-box-layout ul {
+  padding-left: 20px;
+}
+
+.three-box-layout img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Added margin for better spacing */
+}
+
+/* Section-specific colors */
+#vinyls {
+  background-color: #FFF1F0;
+  color: black;
+}
+
+#vinyls h2 {
+  color: darkred;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center; /* Centering vinyls title */
+}
+
+#games {
+  background-color: #FFF1F0;
+  color: black;
+}
+
+#games h2 {
+  color: darkred;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center; /* Centering games title */
+}
+
+#cameras {
+  background-color: #FFF1F0;
+}
+
+#cameras h2 {
+  color: darkred;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center; /* Centering cameras title */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #B5685B;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .three-box-layout section {
+    flex: 1 1 100%;
+  }
+}
