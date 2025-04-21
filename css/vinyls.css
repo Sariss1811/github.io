@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Page Styling */
+body {
+  background-color: #F0E0D3;
+  font-family: 'Quincy CF', Courier, monospace; /* Retro font */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #B5685B;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #B5685B;
+  border-radius: 5px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #B5685B;
+  color: white;
+  padding: 30px 20px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+}
+ 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #B5685B;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+/* Section-specific colors */
+#vinyls {
+  background-color: #FFF1F0;
+  color: black;
+}
+
+#vinyls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  background-color: #FFF1F0;
+}
+
+.album-box {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.album-box:hover {
+  transform: scale(1.05);
+}
+
+.album-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.album-box p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: lighter;
+}
