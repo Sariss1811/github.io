@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f6f0e8;
+  font-family:Courier New', Courier, monospace;
+  background-color: ##fdf6e3;
   margin: 0;
   padding: 0;
 }
 
 nav {
-  background-color: #222;
-  padding: 10px;
+  background-color: #B5685B;
+  padding: 15px;
   text-align: center;
 }
 
@@ -63,13 +63,14 @@ header p {
 }
 
 footer {
-  background-color: #222;
+  background-color:  #B5685B;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-.socials {
+footer ul {
   list-style: none;
   padding: 0;
 }
+
